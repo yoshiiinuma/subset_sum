@@ -15,6 +15,8 @@ Because if there exists a subset of sum j with 1 to i-1th elements of A, both DP
 If current element A[i-1] has value greater than j, the value cannot be added to the subset because the sum will be greater than j.
 Also, if the sum of the current subset is greater than j, no further calculation is needed because it does not satfifies the problem. 
 
+DP[i][0] is always true because the sum of the subset {} is always 0.
+
 ## Complexity Analysis
 
 * Time Complexity: O(N*K)
